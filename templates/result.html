@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            max-width: 100px;
+        }
+        .header h1, .header .logout-button, .header .home-button {
+            margin: 0;
+        }
+        .header .home-button,
+        .header .logout-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .header h1 {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .container {
+            flex: 1;
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .result-page h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .images-table {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        .images-table h2 {
+            margin-top: 0;
+        }
+        .images-table .images {
+            display: none;
+            margin-top: 10px;
+        }
+        .images-table.show .images {
+            display: block;
+        }
+        .cam-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .cam-table td {
+            width: 50%;
+            padding: 5px;
+            vertical-align: top;
+        }
+        .cam-table img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: #4CAF50;
+        }
+        .toggle-button:hover {
+            color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2E7D32;
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleImages(containerId) {
+            const container = document.getElementById(containerId);
+            container.classList.toggle("show");
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/company_logo.png') }}" alt="Company Logo" class="logo">
+        <h1>Result</h1>
+        <div>
+            <button class="home-button" onclick="window.location.href='/dashboard'">Home</button>
+            <button class="logout-button" onclick="window.location.href='/logout'">Logout</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="result-page">
+            <h1>Images Retrieved</h1>
+            {% if error %}
+                <div class="error-message">
+                    {{ error }}
+                </div>
+            {% else %}
+                {% if tool == 'bussing' %}
+                    <div class="results-container">
+                        {% for sub_id, cams in image_urls.items() %}
+                            <div class="images-table" id="container-{{ sub_id }}">
+                                <h2>
+                                    Sub ID: {{ sub_id }}
+                                    <span class="toggle-button" onclick="toggleImages('container-{{ sub_id }}')">[Toggle Images]</span>
+                                </h2>
+                                <div class="images">
+                                    <table class="cam-table">
+                                        {% for i in range(1, 9) %}
+                                            <tr>
+                                                {% if 'Cam 1' in cams and cams['Cam 1']['Zone ' ~ i] %}
+                                                    <td>
+                                                        <strong>Cam 1 - Zone {{ i }}</strong>
+                                                        <img src="{{ cams['Cam 1']['Zone ' ~ i] }}" alt="Cam 1 Zone {{ i }}">
+                                                    </td>
+                                                {% else %}
+                                                    <td>
+                                                        <strong>Cam 1 - Zone {{ i }}</strong>
+                                                        <p>No image available</p>
+                                                    </td>
+                                                {% endif %}
+                                                {% if 'Cam 2' in cams and cams['Cam 2']['Zone ' ~ i] %}
+                                                    <td>
+                                                        <strong>Cam 2 - Zone {{ i }}</strong>
+                                                        <img src="{{ cams['Cam 2']['Zone ' ~ i] }}" alt="Cam 2 Zone {{ i }}">
+                                                    </td>
+                                                {% else %}
+                                                    <td>
+                                                        <strong>Cam 2 - Zone {{ i }}</strong>
+                                                        <p>No image available</p>
+                                                    </td>
+                                                {% endif %}
+                                            </tr>
+                                        {% endfor %}
+                                    </table>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% elif tool == 'frame' %}
+                    <div class="results-container">
+                        {% for frame_id, cams in image_urls.items() %}
+                            <div class="images-table" id="container-{{ frame_id }}">
+                                <h2>
+                                    Frame ID: {{ frame_id }}
+                                    <span class="toggle-button" onclick="toggleImages('container-{{ frame_id }}')">[Toggle Images]</span>
+                                </h2>
+                                <div class="images">
+                                    <table class="cam-table">
+                                        {% for mode in range(2, 7) %}
+                                            <tr>
+                                                {% if 'Cam 1' in cams and cams['Cam 1']['Mode ' ~ mode] %}
+                                                    <td>
+                                                        <strong>Cam 1 - Mode {{ mode }}</strong>
+                                                        <img src="{{ cams['Cam 1']['Mode ' ~ mode] }}" alt="Cam 1 Mode {{ mode }}">
+                                                    </td>
+                                                {% else %}
+                                                    <td>
+                                                        <strong>Cam 1 - Mode {{ mode }}</strong>
+                                                        <p>No image available</p>
+                                                    </td>
+                                                {% endif %}
+                                                {% if 'Cam 2' in cams and cams['Cam 2']['Mode ' ~ mode] %}
+                                                    <td>
+                                                        <strong>Cam 2 - Mode {{ mode }}</strong>
+                                                        <img src="{{ cams['Cam 2']['Mode ' ~ mode] }}" alt="Cam 2 Mode {{ mode }}">
+                                                    </td>
+                                                {% else %}
+                                                    <td>
+                                                        <strong>Cam 2 - Mode {{ mode }}</strong>
+                                                        <p>No image available</p>
+                                                    </td>
+                                                {% endif %}
+                                            </tr>
+                                        {% endfor %}
+                                    </table>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endif %}
+            <a href="/data_input">Go Back</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Vision System Dashboard. All rights reserved.</p>
+    </div>
+</body>
+</html>

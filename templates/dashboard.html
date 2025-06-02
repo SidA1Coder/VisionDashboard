@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision System Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            flex: 1; /* Allow the h1 to take up available space */
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        .logout-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: auto;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2E7D32;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/company_logo.png') }}" alt="Company Logo" class="logo">
+        <h1>Vision System Dashboard</h1>
+        <button class="logout-button" onclick="window.location.href='/logout'">Logout</button>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <h3>Search by SubIDs or Date</h3>
+            <img src="https://cdn.hubblecontent.osi.office.net/m365content/publish/f5ae5bb5-8d54-4c19-a1cc-2f920cb8dd1f/thumbnails/xxlarge.jpg" 
+                 alt="Graph showing production efficiency">
+            <button onclick="window.location.href='/data_input'">Continue</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h3>Trends</h3>
+            <img src="https://cdn.hubblecontent.osi.office.net/m365content/publish/74e00fef-858e-4f81-a695-d150ed4c09a8/thumbnails/xxlarge.jpg" 
+                 alt="Chart displaying production trends">
+            <button onclick="window.location.href='/Statistics'">Continue</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <h3>Fails and Pass</h3>
+            <img src="https://cdn.hubblecontent.osi.office.net/m365content/publish/2dbe9d9c-72f9-47f5-81a8-e2ebe97df3e1/thumbnails/xxlarge.jpg" 
+                 alt="Image representing areas for improvement">
+            <button onclick="window.location.href='/Fails-and-Pass'">Continue</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Vision System Dashboard. All rights reserved.</p>
+    </div>
+</body>
+</html>
