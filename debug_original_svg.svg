@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 1600 1200">
+<image x="0" y="0" width="1600px" height="1200px" xlink:href="SUBID_250608806430_00.01.07.103_4th.bmp"/>
+<line x1="0" y1="600" x2="1600" y2="600" stroke-width="1" stroke="#00FF00" />
+<text x="60" y="349" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#FF0000">Total Status: Image Fail.</text>
+<text x="60" y="309" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">2nd Crease: Detected.</text>
+<line x1="757.3" y1="627.2" x2="757.3" y2="635.2" stroke-width="1" stroke="#FFFF00" />
+<line x1="757.3" y1="627.2" x2="757.3" y2="635.2" stroke-width="1" stroke="#FFFF00" />
+<line x1="757.3" y1="639.2" x2="757.3" y2="647.2" stroke-width="1" stroke="#FFFF00" />
+<line x1="747.3" y1="637.2" x2="755.3" y2="637.2" stroke-width="1" stroke="#FFFF00" />
+<line x1="759.3" y1="637.2" x2="767.3" y2="637.2" stroke-width="1" stroke="#FFFF00" />
+<circle  cx="757.3" cy="637.2" r="10" stroke-width="1" stroke="#FFFF00" fill="none"/>
+<text x="60" y="149" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Lead Foil Skew: Pass.</text>
+<text x="60" y="189" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Lead Foil Condition: Pass.</text>
+<text x="60" y="229" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Length of Folded Tab: Pass.</text>
+<text x="60" y="109" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Fold Direction: Correct.</text>
+<text x="1025.3" y="660.3" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:normal;fill:#00FFFF">LFF Fiducial Center</text>
+<line x1="1025.3" y1="661.3" x2="1025.3" y2="669.3" stroke-width="2" stroke="#00FFFF" />
+<line x1="1025.3" y1="661.3" x2="1025.3" y2="669.3" stroke-width="2" stroke="#00FFFF" />
+<line x1="1025.3" y1="673.3" x2="1025.3" y2="681.3" stroke-width="2" stroke="#00FFFF" />
+<line x1="1015.3" y1="671.3" x2="1023.3" y2="671.3" stroke-width="2" stroke="#00FFFF" />
+<line x1="1027.3" y1="671.3" x2="1035.3" y2="671.3" stroke-width="2" stroke="#00FFFF" />
+<circle  cx="1025.3" cy="671.3" r="10" stroke-width="2" stroke="#00FFFF" fill="none"/>
+<text x="547.3" y="662.6" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:normal;fill:#FF00FF">LF UnFold Center</text>
+<line x1="547.3" y1="663.6" x2="547.3" y2="671.6" stroke-width="2" stroke="#FF00FF" />
+<line x1="547.3" y1="663.6" x2="547.3" y2="671.6" stroke-width="2" stroke="#FF00FF" />
+<line x1="547.3" y1="675.6" x2="547.3" y2="683.6" stroke-width="2" stroke="#FF00FF" />
+<line x1="537.3" y1="673.6" x2="545.3" y2="673.6" stroke-width="2" stroke="#FF00FF" />
+<line x1="549.3" y1="673.6" x2="557.3" y2="673.6" stroke-width="2" stroke="#FF00FF" />
+<circle  cx="547.3" cy="673.6" r="10" stroke-width="2" stroke="#FF00FF" fill="none"/>
+<text x="269.6" y="660.2" style="font-family:Arial;font-size:0pt;font-style:normal;font-weight:normal;fill:#00FF00">End of Lead Foil</text>
+<line x1="269.6" y1="670.2" x2="269.6" y2="678.2" stroke-width="1" stroke="#00FF00" />
+<line x1="269.6" y1="670.2" x2="269.6" y2="678.2" stroke-width="1" stroke="#00FF00" />
+<line x1="269.6" y1="682.2" x2="269.6" y2="690.2" stroke-width="1" stroke="#00FF00" />
+<line x1="259.6" y1="680.2" x2="267.6" y2="680.2" stroke-width="1" stroke="#00FF00" />
+<line x1="271.6" y1="680.2" x2="279.6" y2="680.2" stroke-width="1" stroke="#00FF00" />
+<circle  cx="269.6" cy="680.2" r="10" stroke-width="1" stroke="#00FF00" fill="none"/>
+<text x="873.8" y="646.1" style="font-family:Arial;font-size:0pt;font-style:normal;font-weight:normal;fill:#FF0000">Center Fold of Lead Foil</text>
+<line x1="873.8" y1="656.1" x2="873.8" y2="664.1" stroke-width="1" stroke="#FF0000" />
+<line x1="873.8" y1="656.1" x2="873.8" y2="664.1" stroke-width="1" stroke="#FF0000" />
+<line x1="873.8" y1="668.1" x2="873.8" y2="676.1" stroke-width="1" stroke="#FF0000" />
+<line x1="863.8" y1="666.1" x2="871.8" y2="666.1" stroke-width="1" stroke="#FF0000" />
+<line x1="875.8" y1="666.1" x2="883.8" y2="666.1" stroke-width="1" stroke="#FF0000" />
+<circle  cx="873.8" cy="666.1" r="10" stroke-width="1" stroke="#FF0000" fill="none"/>
+<text x="60" y="269" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#FF0000">Lead fold and Sheeter Gap: Fail.</text>
+<line x1="1025.1" y1="495.9" x2="1025.5" y2="846.6" stroke-width="1" stroke="#008000" />
+<line x1="547.5" y1="859" x2="547.1" y2="488.1" stroke-width="1" stroke="#008000" />
+<text x="1250.1" y="206.7" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">10.163 mm</text>
+<line x1="1250.1" y1="217.7" x2="1250.1" y2="499.6" stroke-width="3" stroke="#00FF00" />
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1250.1 499.6) rotate(90)"/>
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1250.1 217.7) rotate(-90)"/>
+<text x="1245.5" y="956.5" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">2.296 mm</text>
+<line x1="1245.5" y1="967.5" x2="1245.5" y2="848.3" stroke-width="3" stroke="#00FF00" />
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1245.5 848.3) rotate(-90)"/>
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1245.5 967.5) rotate(90)"/>
+<line x1="873.9" y1="697.2" x2="873.9" y2="811.2" stroke-width="1" stroke="#008000" />
+<line x1="873.7" y1="515" x2="873.7" y2="641" stroke-width="1" stroke="#008000" />
+<line x1="270.8" y1="823.2" x2="270.8" y2="709.2" stroke-width="1" stroke="#008000" />
+<line x1="268.3" y1="533.3" x2="268.3" y2="655.3" stroke-width="1" stroke="#008000" />
+<text x="60" y="69" style="font-family:Arial;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">SUBID_250608806430</text>
+<line x1="800" y1="0" x2="800" y2="1200" stroke-width="1" stroke="#00FF00" />
+</svg>

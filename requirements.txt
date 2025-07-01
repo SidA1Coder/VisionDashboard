@@ -1,0 +1,8 @@
+Flask
+pyodbc
+Pillow
+requests
+cairosvg
+plotly
+pandas
+numpy

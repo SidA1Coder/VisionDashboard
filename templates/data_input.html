@@ -131,12 +131,12 @@
                 subIdField.style.display = 'none';
                 frameIdField.style.display = 'none';
             } else if (option === 'sub_id') {
-                if (tool === 'bussing') {
-                    subIdField.style.display = 'block';
-                    frameIdField.style.display = 'none';
-                } else if (tool === 'frame') {
+                if (tool === 'frame') {
                     frameIdField.style.display = 'block';
                     subIdField.style.display = 'none';
+                } else {
+                    subIdField.style.display = 'block';
+                    frameIdField.style.display = 'none';
                 }
                 dateField.style.display = 'none';
             } else {
@@ -144,7 +144,7 @@
                 subIdField.style.display = 'none';
                 frameIdField.style.display = 'none';
             }
-        }
+        }   
     </script>
 </head>
 <body>
@@ -164,11 +164,14 @@
             <h1>Enter Image Information</h1>
             <form action="/data_input" method="post">
                 <label for="tool">Tool:</label>
+                <!-- ...existing code... -->
                 <select id="tool" name="tool" onchange="toggleInputs()" required>
                     <option value="">Select Tool</option>
-                    <option value="bussing">Bussing</option>
-                    <option value="frame">Frame</option>
+                    {% for t in tools %}
+                        <option value="{{ t|lower }}">{{ t|capitalize }}</option>
+                    {% endfor %}
                 </select>
+<!-- ...existing code... -->
 
                 <div id="search_options" style="display: none;">
                     <label for="search_by">Search by:</label>

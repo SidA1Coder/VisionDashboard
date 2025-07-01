@@ -1,0 +1,66 @@
+<svg>
+                <defs>
+                    <style type="text/css">
+                        text { font-family: sans-serif; }
+                    </style>
+                </defs> xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 1600 1200">
+<image x="0" y="0" width="1600px" height="1200px" xlink:href="SUBID_250608793078_22.37.39.761_4th.bmp"/>
+<text x="60" y="349" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#FF0000">Total Status: Image Fail.</text>
+<text x="60" y="309" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">2nd Crease: Detected.</text>
+<text x="60" y="229" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#FF0000">Length of Folded Tab: Fail.</text>
+<text x="60" y="189" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Lead Foil Condition: Pass.</text>
+<text x="60" y="149" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Lead Foil Skew: Pass.</text>
+<line x1="811.5" y1="555.9" x2="811.5" y2="563.9" stroke-width="1" stroke="#FFFF00" />
+<line x1="811.5" y1="555.9" x2="811.5" y2="563.9" stroke-width="1" stroke="#FFFF00" />
+<line x1="811.5" y1="567.9" x2="811.5" y2="575.9" stroke-width="1" stroke="#FFFF00" />
+<line x1="801.5" y1="565.9" x2="809.5" y2="565.9" stroke-width="1" stroke="#FFFF00" />
+<line x1="813.5" y1="565.9" x2="821.5" y2="565.9" stroke-width="1" stroke="#FFFF00" />
+<circle  cx="811.5" cy="565.9" r="10" stroke-width="1" stroke="#FFFF00" fill="none"/>
+<text x="60" y="109" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Fold Direction: Correct.</text>
+<text x="1058.4" y="549.8" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:normal;fill:#00FFFF">LFF Fiducial Center</text>
+<line x1="1058.4" y1="550.8" x2="1058.4" y2="558.8" stroke-width="2" stroke="#00FFFF" />
+<line x1="1058.4" y1="550.8" x2="1058.4" y2="558.8" stroke-width="2" stroke="#00FFFF" />
+<line x1="1058.4" y1="562.8" x2="1058.4" y2="570.8" stroke-width="2" stroke="#00FFFF" />
+<line x1="1048.4" y1="560.8" x2="1056.4" y2="560.8" stroke-width="2" stroke="#00FFFF" />
+<line x1="1060.4" y1="560.8" x2="1068.4" y2="560.8" stroke-width="2" stroke="#00FFFF" />
+<circle  cx="1058.4" cy="560.8" r="10" stroke-width="2" stroke="#00FFFF" fill="none"/>
+<text x="571.8" y="540.2" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:normal;fill:#FF00FF">LF UnFold Center</text>
+<line x1="571.8" y1="541.2" x2="571.8" y2="549.2" stroke-width="2" stroke="#FF00FF" />
+<line x1="571.8" y1="541.2" x2="571.8" y2="549.2" stroke-width="2" stroke="#FF00FF" />
+<line x1="571.8" y1="553.2" x2="571.8" y2="561.2" stroke-width="2" stroke="#FF00FF" />
+<line x1="561.8" y1="551.2" x2="569.8" y2="551.2" stroke-width="2" stroke="#FF00FF" />
+<line x1="573.8" y1="551.2" x2="581.8" y2="551.2" stroke-width="2" stroke="#FF00FF" />
+<circle  cx="571.8" cy="551.2" r="10" stroke-width="2" stroke="#FF00FF" fill="none"/>
+<line x1="451.6" y1="579.1" x2="451.9" y2="382.1" stroke-width="1" stroke="#008000" />
+<text x="60" y="269" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">Lead fold and Sheeter Gap: Pass.</text>
+<text x="948.3" y="541.1" style="font-family:sans-serif;font-size:0pt;font-style:normal;font-weight:normal;fill:#FF0000">Center Fold of Lead Foil</text>
+<line x1="948.3" y1="551.1" x2="948.3" y2="559.1" stroke-width="1" stroke="#FF0000" />
+<line x1="948.3" y1="551.1" x2="948.3" y2="559.1" stroke-width="1" stroke="#FF0000" />
+<line x1="948.3" y1="563.1" x2="948.3" y2="571.1" stroke-width="1" stroke="#FF0000" />
+<line x1="938.3" y1="561.1" x2="946.3" y2="561.1" stroke-width="1" stroke="#FF0000" />
+<line x1="950.3" y1="561.1" x2="958.3" y2="561.1" stroke-width="1" stroke="#FF0000" />
+<circle  cx="948.3" cy="561.1" r="10" stroke-width="1" stroke="#FF0000" fill="none"/>
+<text x="449.5" y="521.2" style="font-family:sans-serif;font-size:0pt;font-style:normal;font-weight:normal;fill:#00FF00">End of Lead Foil</text>
+<line x1="449.5" y1="531.2" x2="449.5" y2="539.2" stroke-width="1" stroke="#00FF00" />
+<line x1="449.5" y1="531.2" x2="449.5" y2="539.2" stroke-width="1" stroke="#00FF00" />
+<line x1="449.5" y1="543.2" x2="449.5" y2="551.2" stroke-width="1" stroke="#00FF00" />
+<line x1="439.5" y1="541.2" x2="447.5" y2="541.2" stroke-width="1" stroke="#00FF00" />
+<line x1="451.5" y1="541.2" x2="459.5" y2="541.2" stroke-width="1" stroke="#00FF00" />
+<circle  cx="449.5" cy="541.2" r="10" stroke-width="1" stroke="#00FF00" fill="none"/>
+<line x1="571.5" y1="374.8" x2="572.1" y2="727.6" stroke-width="1" stroke="#008000" />
+<line x1="1058.8" y1="386.7" x2="1058.1" y2="734.8" stroke-width="1" stroke="#008000" />
+<text x="1278" y="175.5" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">7.408 mm</text>
+<line x1="1278" y1="186.5" x2="1278" y2="391.6" stroke-width="3" stroke="#00FF00" />
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1278 391.6) rotate(90)"/>
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1278 186.5) rotate(-90)"/>
+<text x="1282.3" y="931" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">6.840 mm</text>
+<line x1="1282.3" y1="942" x2="1282.3" y2="738.8" stroke-width="3" stroke="#00FF00" />
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1282.3 738.8) rotate(-90)"/>
+<polyline points="0,0 -18,-9 -15,0 -18,9" fill="#00FF00" stroke="#00FF00" transform="translate(1282.3 942) rotate(90)"/>
+<line x1="949.2" y1="421.9" x2="949.2" y2="505.9" stroke-width="1" stroke="#008000" />
+<line x1="947.7" y1="626.4" x2="947.3" y2="690.4" stroke-width="1" stroke="#008000" />
+<text x="60" y="69" style="font-family:sans-serif;font-size:9pt;font-style:normal;font-weight:bold;fill:#00FF00">SUBID_250608793078</text>
+<line x1="445.6" y1="730.9" x2="448.8" y2="472.9" stroke-width="1" stroke="#008000" />
+<line x1="800" y1="0" x2="800" y2="1200" stroke-width="1" stroke="#00FF00" />
+<line x1="0" y1="600" x2="1600" y2="600" stroke-width="1" stroke="#00FF00" />
+</svg>

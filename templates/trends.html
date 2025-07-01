@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trends Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; min-height: 100vh; }
+        .header { background: linear-gradient(90deg, #4CAF50, #2E7D32); color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { max-width: 100px; }
+        .header h1 { flex-grow: 1; text-align: center; margin: 0; }
+        .container { max-width: 900px; margin: 30px auto; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 30px; }
+        .footer { text-align: center; padding: 10px; background-color: #2E7D32; color: white; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/company_logo.png') }}" alt="Company Logo" class="logo">
+        <h1>Trends Dashboard</h1>
+        <button onclick="window.location.href='/logout'" style="background:#e74c3c;color:white;padding:10px 20px;border:none;border-radius:4px;cursor:pointer;">Logout</button>
+    </div>
+    <div class="container">
+        <form method="post">
+            <label for="tool">Tool:</label>
+            <select name="tool" id="tool" required>
+                <option value="">Select Tool</option>
+                {% for t in tools %}
+                    <option value="{{ t }}">{{ t }}</option>
+                {% endfor %}
+            </select>
+            <label for="start_date">Start Date:</label>
+            <input type="date" name="start_date" required>
+            <label for="end_date">End Date:</label>
+            <input type="date" name="end_date" required>
+            <button type="submit">Show Trends</button>
+        </form>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        {% for chart in chartJSONs %}
+            <h3>{{ chart.label }}</h3>
+            <div id="chart-{{ loop.index0 }}" style="height:500px;"></div>
+            <script id="chart-data-{{ loop.index0 }}" type="application/json">
+                {{ chart.json | safe }}
+            </script>
+            <script>
+                const chartData = JSON.parse(document.getElementById('chart-data-{{ loop.index0 }}').textContent);
+                Plotly.newPlot('chart-{{ loop.index0 }}', chartData.data, chartData.layout);
+            </script>
+        {% endfor %}
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Vision System Dashboard. All rights reserved.</p>
+    </div>
+</body>
+</html>
